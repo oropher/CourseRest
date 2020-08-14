@@ -10,12 +10,13 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import mx.com.oropher.ws.rest.model.Course;
 
-@Consumes("application/xml,application/json")
-@Produces("application/xml,application/json")
+@Consumes({MediaType.APPLICATION_JSON})
+@Produces({MediaType.APPLICATION_JSON})
 @Path("/courseService")
 public interface CourseService {
 	

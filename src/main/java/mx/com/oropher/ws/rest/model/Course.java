@@ -1,10 +1,13 @@
 package mx.com.oropher.ws.rest.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@XmlRootElement(name = "Course")
+//@XmlRootElement(name = "Course")
+@Entity
 public class Course {
 
+	@Id
 	private Long id;
 	private String name;
 	private String taughtBy;
